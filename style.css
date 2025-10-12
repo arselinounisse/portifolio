@@ -6,7 +6,7 @@
 }
 
 body {
-  background-color: #43436b;
+  background-color: hsl(225, 23%, 24%);
 }
 
 header {
@@ -42,27 +42,27 @@ header {
       position: relative;
       margin: 8px;
     }
-    li::after{
-        position: absolute;
-        content: " ";
-        width: 0%;
-        height: 2px;
-        background-color: rgb(0, 132, 255);
-        top: 100%;
-        left: -0%;
-        transition: all 0.1s ease-out;
+    li::after {
+      position: absolute;
+      content: " ";
+      width: 0%;
+      height: 2px;
+      background-color: rgb(0, 132, 255);
+      top: 100%;
+      left: -0%;
+      transition: all 0.1s ease-out;
     }
-     li:hover::after{
-        position: absolute;
-        content: " ";
-        width: 100%;
-        height: 2px;
-        background-color: rgb(0, 132, 255);
-        top: 100%;
-        left: -0%;
-        transition: all 0.2s ease;
+    li:hover::after {
+      position: absolute;
+      content: " ";
+      width: 100%;
+      height: 2px;
+      background-color: rgb(0, 132, 255);
+      top: 100%;
+      left: -0%;
+      transition: all 0.2s ease;
     }
- 
+
     display: flex;
     list-style: none;
   }
@@ -104,11 +104,49 @@ main {
       i {
         margin: 10px;
         font-size: 30px;
-        background-color: rgba(0, 0, 0, 0.288);
+        background-color: rgba(0, 0, 0, 0.197);
         color: white;
         padding: 5px;
         border-radius: 10px;
       }
+      i:hover {
+        transition: 0.6s ease-in-out;
+        transform: scale(1.2);
+      }
     }
   }
+}
+.second {
+  display: flex;
+  justify-content: space-evenly;
+  .skills {
+    width: 450px;
+    height: 400px;
+    align-items: center;
+    text-align: center;
+    h2 {
+      font-size: 30px;
+      color: white;
+      text-align: center;
+      margin-bottom: 20px;
+      padding: 30px;
+    }
+    i {
+      font-size: 70px;
+    }
+  }
+  .mim{
+    width: 450px;
+    height: 400px;
+    h2{
+    font-size: 30px;
+    color: white;
+    margin-bottom: 20px;
+  }
+  p{
+    color: white;
+  }
+  width: auto;
+  height: auto;
+}
 }
